@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from "@angular/forms";
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -32,6 +33,7 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
  imports: [
    BrowserModule,
    AppRoutingModule,
+   ReactiveFormsModule,
  
    AngularFireModule.initializeApp(environment.firebaseConfig),
    AngularFireDatabaseModule 
