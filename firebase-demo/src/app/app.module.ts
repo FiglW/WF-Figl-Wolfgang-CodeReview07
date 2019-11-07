@@ -14,6 +14,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { TravelsPageComponent } from './travels-page/travels-page.component';
+import { CustomerComponent } from './customer/customer.component';
+import { CustomerListComponent } from './customer-list/customer-list.component';
+
 
 @NgModule({
  declarations: [
@@ -21,7 +24,10 @@ import { TravelsPageComponent } from './travels-page/travels-page.component';
    NavbarComponent,
    HomePageComponent,
    BlogPageComponent,
-   TravelsPageComponent
+   TravelsPageComponent,
+   CustomerComponent,
+   CustomerListComponent,
+   
  ],
  imports: [
    BrowserModule,
