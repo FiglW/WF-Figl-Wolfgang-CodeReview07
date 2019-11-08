@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from "@angular/forms";
+import { ReactiveFormsModule,FormsModule } from "@angular/forms";
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +17,10 @@ import { BlogPageComponent } from './blog-page/blog-page.component';
 import { TravelsPageComponent } from './travels-page/travels-page.component';
 import { CustomerComponent } from './customer/customer.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
+import { CustomerService } from "./shared/customer.service";
+import { ReservationPageComponent } from './reservation-page/reservation-page.component';
+
+
 
 
 @NgModule({
@@ -28,6 +32,7 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
    TravelsPageComponent,
    CustomerComponent,
    CustomerListComponent,
+   ReservationPageComponent,
    
  ],
  imports: [
@@ -36,9 +41,9 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
    ReactiveFormsModule,
  
    AngularFireModule.initializeApp(environment.firebaseConfig),
-   AngularFireDatabaseModule 
+   AngularFireDatabaseModule,FormsModule
  ],
- providers: [],
+ providers: [CustomerService],
  bootstrap: [AppComponent]
 })
 export class AppModule { }

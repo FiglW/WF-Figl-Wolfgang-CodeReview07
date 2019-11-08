@@ -1,0 +1,34 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #A7AAA8;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #343A40;
+  padding: 20px;
+  margin-top: 20px;
+  margin: 0 15% 5% 15%;
+  
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.midcolumn{
+  
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
